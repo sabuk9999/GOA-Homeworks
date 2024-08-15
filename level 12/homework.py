@@ -51,23 +51,18 @@ if user_input ==100:
 
  
 
-
-
 #Task 5
 
-user_input = int(input("How old are you: "))
+user_age = int(input("Enter your age: "))
 
-
-if user_input <13:
-    print(f"{user_input} You are kid")
-
-
-
-if user_input >20:
-    print(f"{user_input} You are grown up")
-
-
-
+if user_age <= 13:
+    print("You are kid")
+elif user_age > 13 and user_age < 20:
+    print("You are teenager")
+elif user_age >= 20:
+    print("You are grown up")
+else:
+    print("Enter right age!")
 
 
 
